@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leftSide {
+    width: 50%;
+    background-image: url("./travel.jpg");
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftBox {
+    color:white;
+    padding: 40px;
+}
+
+.leftTitle {
+    font-size: 100px;
+}
+
+.leftDesc {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.leftMinorDesc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btm {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border:none;
+    min-width:90px;
+    color:white;
+}
+
+.btmPrimary {
+    background-color: rgb(25, 25, 230);
+    margin-right: 20px;
+}
+
+.btmPrimary:hover {
+    background-color: rgb(5, 5, 107);
+    transition: 0.4s;
+}
+
+.btmSecondary {
+    background-color: rgb(34, 207, 238);
+}
+
+.btmSecondary:hover {
+    background-color: rgb(5, 141, 219);
+    transition: 0.4s;
+}
+
+.btmSecondary > i {
+    margin-right: 5px;
+}
+
+i {
+    font-size: 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rightBox {
+    margin-top: 100px;
+}
+
+.rightTittle {
+    font-size: 36px;
+}
+
+.rightDesc {
+    margin: 17px 0px;
+}
+
+.rightDesc > a {
+    color: rgb(25, 25, 230);
+    text-decoration: none;
+}
+
+.rightForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    border: none;
+    border-bottom: 2px solid rgb(56, 53, 53);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.check {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check > a {
+    color: grey;
+    text-decoration: none;
+}
+
+.btmSubmit {
+    background-color: rgb(22, 224, 22);
+    width: 100px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px 1px rgb(7, 165, 7);
+    margin-left: auto;
+}
+
+.btmSubmit:hover {
+    background-color: green;
+    transition: 0.4s;
+}
+
+/* ,576 */
+@media (max-width:1024px) {
+    .leftTitle {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:570px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .leftSide {
+        width: 100%;
+        padding: 25px;
+    }
+    .rightSide {
+        width: 100%;
+        padding: 25px;
+    }
+    .rightBox {
+        margin-top: 5px;
+    }
+    .btm {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
